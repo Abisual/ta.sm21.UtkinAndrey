@@ -1,0 +1,54 @@
+{
+    "test_data": {
+        "register_page_ID's": [
+            {
+                "pageUsername": "registerForm:username"
+            },
+            {
+                "pagePassword": "registerForm:password"
+            },
+            {
+                "pageRepeatPassword": "registerForm:confirmPassword"
+            },
+            {
+                "pageEmail": "registerForm:email"
+            },
+            {
+                "pageRole": "registerForm:role"
+            },
+            {
+                "pageButtonRegistration": "registerForm:j_idt26"
+            }
+        ],
+        "regitstratioin_data": [
+            {
+                "password": "Password1+"
+            },
+            {
+                "email": "user1@testmail.com"
+            }
+        ],
+        "xpath_data": [
+            {
+                "successfulReg": "//div[@class='justRegisteredBlock'][1]"
+            },
+            {
+                "invalidLogin": "//*[@id='registerForm']/table/tbody/tr[1]/td[3]/span"
+            },
+            {
+                "invalidPassword": "//*[@id='registerForm']/table/tbody/tr[2]/td[3]/span"
+            },
+            {
+                "invalidEmail": "//*[@id='registerForm']/table/tbody/tr[5]/td[3]/span"
+            }
+        ],
+        "links": [
+            {
+                "registration_link": "https://inventory.edu-netcracker.com/pages/registration.xhtml"
+            },
+            {
+                "login_link": "https://inventory.edu-netcracker.com/login.jsp"
+            }
+        ]
+    }
+}

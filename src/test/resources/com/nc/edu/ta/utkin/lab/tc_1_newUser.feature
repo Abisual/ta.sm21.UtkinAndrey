@@ -2,11 +2,11 @@ Feature: I can register on site
     All user can register on site
 
   Scenario: I can register on site with valid data
-    Given I am on "Registration" page
-    When I enter "LoginData" in "registerForm:username" field
-    And I enter "PasswordData" in "registerForm:password" field
-    And I enter "PasswordData" in "registerForm:confirmPassword" field
+    Given I am on "Register" page
+    When I enter "TestUser1521" in "registerForm:username" field
+    And I enter "Password2+" in "registerForm:password" field
+    And I enter "Password2+" in "registerForm:confirmPassword" field
     And I enter "EmailData" in "registerForm:email" field
-    And I select "Role" in "registerForm:role" dropdown field
-    And I press button "Registration"
-    Then I should get a message "New user has been registered."
+    And I select "Admin" in "registerForm:role" dropdown field
+    And I press button "registerForm:j_idt26"
+    Then I should get a message "You have successfully registered"
