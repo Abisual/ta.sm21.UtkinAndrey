@@ -32,7 +32,6 @@ public class StepDefinitions {
 
     @Before
     public void registerSetup() {
-        System.setProperty("webdriver.chrome.driver", "D:\\example\\final\\src\\test\\resources\\com\\nc\\edu\\ta\\utkin\\lab\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -212,5 +211,4 @@ public class StepDefinitions {
     public void iEnterNumericalLoginInField(String field) {
         findByName(field).sendKeys(userGenerator()+"1234");
     }
-
 }
